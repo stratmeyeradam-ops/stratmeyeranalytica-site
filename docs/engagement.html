@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Engagement Inquiry — Stratmeyer Analytica</title>
+<meta name="description" content="Request an engagement. Written intake only — conflict-of-interest screening precedes acceptance.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:title" content="Engagement Inquiry — Stratmeyer Analytica">
+<meta property="og:description" content="Request an engagement. Written intake only — conflict-of-interest screening precedes acceptance.">
+<meta property="og:image" content="/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="google-site-verification" content="h-XxXsaNbfY2dWmueZFK5sQSuwXIFelBeB5ByCSWCCg">
+<meta name="msvalidate.01" content="79AA455B3A6A870379DCB6A9DEFF026C">
+<meta name="yandex-verification" content="a1d444bd168e3c86">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="site-wrap">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo"><svg viewBox="0 0 32 32" width="28" height="28" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.25"/><circle cx="16" cy="16" r="5.5" stroke="currentColor" stroke-width="1.25"/><path d="M16 3v6M16 23v6M3 16h6M23 16h6" stroke="currentColor" stroke-width="1.25"/><circle cx="16" cy="16" r="1.4" fill="currentColor"/></svg><span class="site-logo-text">Stratmeyer Analytica</span></a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="/practice">Practice</a>
+        <a href="/research">Research</a>
+        <a href="/chronicle">Chronicle</a>
+        <a href="/publications">Publications</a>
+        <a href="/about">Director</a>
+        <a href="/engagement">Engagement</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="btn-icon" id="search-btn" aria-label="Search"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+        <a href="/careers" class="careers-link">We're Hiring</a>
+        <button type="button" class="btn-icon menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false">
+          <span class="icon-menu"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></span>
+          <span class="icon-close" style="display:none"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+      <a href="/practice">Practice</a>
+      <a href="/research">Research</a>
+      <a href="/chronicle">Chronicle</a>
+      <a href="/publications">Publications</a>
+      <a href="/about">Director</a>
+      <a href="/engagement">Engagement</a>
+      <a href="/careers">Careers (We're Hiring)</a>
+    </nav>
+  </header>
+  <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="search-box" onclick="event.stopPropagation()">
+      <div class="search-inner">
+        <label class="search-label" for="search-input">Search</label>
+        <input class="search-input" id="search-input" type="search" placeholder="Practice, research, director…" autocomplete="off">
+        <ul class="search-results" id="search-results"></ul>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="container" style="padding-top:4rem;padding-bottom:4rem">
+      <div style="display:grid;gap:3rem" class="two-col-even">
+        <div>
+          <p class="kicker">Inquiry portal</p>
+          <h1 style="margin-top:.75rem;font-family:var(--font-display);font-size:clamp(2rem,5vw,3.25rem);letter-spacing:-.03em">Write the problem down.</h1>
+          <p style="margin-top:1.25rem;color:var(--muted);line-height:1.65">Prospective engagements start with a written inquiry and conflict-of-interest review. General questions can go directly to Director Adam Stratmeyer at <a href="mailto:adamstratmeyer@gmail.com">adamstratmeyer@gmail.com</a>.</p>
+          <div style="margin-top:2.5rem">
+            <div class="form-success" id="form-success">
+              <h3>Inquiry received.</h3>
+              <p>Thank you. Conflict-of-interest screening happens before any engagement is accepted. Expect a reply within a few business days.</p>
+            </div>
+            <p class="form-error-msg" id="form-error"></p>
+            <form id="inquiry-form" class="form-grid">
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="name" class="field-label">Name</label>
+                  <input class="field-input" id="name" name="name" required>
+                </div>
+                <div class="form-field">
+                  <label for="org" class="field-label">Organization</label>
+                  <input class="field-input" id="org" name="org">
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="email" class="field-label">Email</label>
+                <input class="field-input" id="email" name="email" type="email" required>
+              </div>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="scope" class="field-label">Scope</label>
+                  <select class="field-select" id="scope" name="scope">
+                    <option>AI Development &amp; Autonomous Systems</option>
+                    <option>Personal Consulting (Adam Stratmeyer, J.D.)</option>
+                    <option>IRB Review &amp; Human-Subjects Compliance</option>
+                    <option>AI Ethics &amp; Algorithmic Auditing</option>
+                    <option>Regulatory compliance / IRB</option>
+                    <option>HIPAA or FERPA audit</option>
+                    <option>System architecture</option>
+                    <option>Behavioral strategy (PRTF / ARU)</option>
+                    <option>AI behavior mapping</option>
+                    <option>General inquiry</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="conflict" class="field-label">Known conflicts</label>
+                  <input class="field-input" id="conflict" name="conflict" value="No known conflict">
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="message" class="field-label">Brief</label>
+                <textarea class="field-textarea" id="message" name="message" required placeholder="What needs review, on what timeline, and what is already in place."></textarea>
+              </div>
+              <p class="form-note">High-acuity work is screened for conflicts before a reply. This form does not create an attorney-client relationship.</p>
+              <div>
+                <button type="submit" class="btn btn-primary" id="form-submit">Submit inquiry</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:1.5rem">
+          <img src="/images/writing.jpg" alt="Notebook under a desk lamp" loading="lazy" style="width:100%;aspect-ratio:16/10;object-fit:cover;outline:1px solid rgba(26,23,20,.1);outline-offset:-1px">
+          <p class="photo-caption">Written intake</p>
+          <div class="info-box">
+            <p>Typical scopes: IRB program review, HIPAA/FERPA exposure mapping, localized automation, PRTF/ARU behavioral systems, AI-behavior mapping against regulatory language. If you need a vendor that will tell you the culture is excellent, this is the wrong address.</p>
+            <p>This form sends your inquiry to Director Adam Stratmeyer. If delivery fails, email <a href="mailto:adamstratmeyer@gmail.com">adamstratmeyer@gmail.com</a> directly. Do not submit patient-identifiable or other sensitive personal data.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="site-logo"><svg viewBox="0 0 32 32" width="24" height="24" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.25"/><circle cx="16" cy="16" r="5.5" stroke="currentColor" stroke-width="1.25"/><path d="M16 3v6M16 23v6M3 16h6M23 16h6" stroke="currentColor" stroke-width="1.25"/><circle cx="16" cy="16" r="1.4" fill="currentColor"/></svg><span style="font-family:var(--font-display);font-size:1.125rem;color:var(--paper)">Stratmeyer Analytica</span></a>
+        <p>Independent practice. Rapid City, South Dakota. Observe, log, verify.</p>
+        <p style="margin-top:0.5rem;font-size:0.875rem"><a href="https://adamstratmeyer.com" target="_blank" rel="noreferrer" style="color:var(--paper-2);text-decoration:underline;text-underline-offset:3px">adamstratmeyer.com</a> · <a href="mailto:adamstratmeyer@gmail.com" style="color:var(--paper-2);text-decoration:underline;text-underline-offset:3px">adamstratmeyer@gmail.com</a></p>
+        <a href="/careers" class="footer-hiring-badge">● We're Hiring — View Open Roles</a>
+      </div>
+      <div class="footer-col">
+        <h2>Practice</h2>
+        <ul>
+          <li><a href="/practice">Overview</a></li>
+          <li><a href="/practice/compliance">Compliance</a></li>
+          <li><a href="/practice/architecture">Architecture</a></li>
+          <li><a href="/practice/behavioral">Behavioral strategy</a></li>
+          <li><a href="/engagement">Engagement inquiry</a></li>
+          <li><a href="/assessment">Self-assessment</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Analysis</h2>
+        <ul>
+          <li><a href="/research">Research</a></li>
+          <li><a href="/chronicle">Chronicle</a></li>
+          <li><a href="/publications">Publications</a></li>
+          <li><a href="https://medium.com/@adamstratmeyer" target="_blank" rel="noreferrer">Medium</a></li>
+          <li><a href="https://adamstratmeyer.com" target="_blank" rel="noreferrer">adamstratmeyer.com</a></li>
+          <li><a href="https://observablecompute.org" target="_blank" rel="noreferrer">Observable Compute</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Legal</h2>
+        <ul>
+          <li><a href="/privacy">Privacy</a></li>
+          <li><a href="/terms">Terms</a></li>
+          <li><a href="/disclaimer">Disclaimer</a></li>
+          <li><a href="/disclosures">Disclosures</a></li>
+          <li><a href="/guidelines">Auditing guidelines</a></li>
+          <li><a href="https://orcid.org/0009-0005-8693-4641" target="_blank" rel="noreferrer">ORCID</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>&copy; 2025 Stratmeyer Analytica. Independent analysis. Not legal advice.</p>
+        <p>Rapid City, South Dakota</p>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+# stratmeyeranalytica.org — Machine-Readable Manifest
+
+> Stratmeyer Analytica is an independent consulting and auditing practice operated by Adam Ian Stratmeyer, J.D.
+> Core specializations: AI Development, Personal Consulting, IRB Protocol Review, and Empirical AI Ethics.
+> Personal website of the Director: https://adamstratmeyer.com
+> Direct Contact: adamstratmeyer@gmail.com | inquiries@stratmeyeranalytica.org
+
+## Core Practice Pillars
+- [AI Development](/practice/ai-development.html) — Autonomous agent workflows, private local inference clusters, and deterministic evaluation test harnesses.
+- [Personal Consulting](/practice/personal-consulting.html) — Confidential 1-on-1 strategic advisory and dispute counsel with Director Adam Ian Stratmeyer, J.D.
+- [IRB Review](/practice/irb-review.html) — Institutional Review Board human-subjects protocol auditing, 45 CFR 46 (Common Rule), and Belmont Report ethics.
+- [AI Ethics & Algorithmic Auditing](/practice/ai-ethics.html) — Empirical measurement of automated system behavior, observable function metrics, and bias stress-testing.
+
+## Careers & Opportunities (We're Hiring)
+- [Careers](/careers.html) — Open roles: AI Systems Engineer & Agent Architect, IRB Compliance Auditor, and AI Ethics Fellow. Inquiries to adamstratmeyer@gmail.com.
+
+## Foundational Research
+- [Observable Function in Processing Entities](/research/observable-function.html) — Behavioral mapping of artificial intelligence systems.
+- [The Helpful-Harmless Paradox](/research/helpful-harmless.html) — Analysis of systemic contradictions in alignment training.
+- [The Knowledge Gradient](/research/knowledge-gradient.html) — Informational completeness frameworks.
+
+## Authorship & Credentials
+Founder & Director: Adam Ian Stratmeyer, J.D. (USD Knudson School of Law, 2017).
+Former Graduate Compliance Officer (300+ IRB reviews).
+Personal website: https://adamstratmeyer.com
+ORCID: https://orcid.org/0009-0005-8693-4641
+SSRN: https://ssrn.com/author=6445280

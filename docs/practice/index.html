@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Practice Scope — Stratmeyer Analytica</title>
+<meta name="description" content="Specialized consulting and auditing practice: AI development, personal consulting, IRB compliance review, and AI ethics.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:title" content="Practice Scope — Stratmeyer Analytica">
+<meta property="og:description" content="Specialized consulting and auditing: AI development, personal consulting, IRB compliance review, and AI ethics.">
+<meta property="og:image" content="/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="site-wrap">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo"><svg viewBox="0 0 32 32" width="28" height="28" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.25"/><circle cx="16" cy="16" r="5.5" stroke="currentColor" stroke-width="1.25"/><path d="M16 3v6M16 23v6M3 16h6M23 16h6" stroke="currentColor" stroke-width="1.25"/><circle cx="16" cy="16" r="1.4" fill="currentColor"/></svg><span class="site-logo-text">Stratmeyer Analytica</span></a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="/practice">Practice</a>
+        <a href="/research">Research</a>
+        <a href="/chronicle">Chronicle</a>
+        <a href="/publications">Publications</a>
+        <a href="/about">Director</a>
+        <a href="/engagement">Engagement</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="btn-icon" id="search-btn" aria-label="Search"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+        <a href="/careers" class="careers-link">We're Hiring</a>
+        <button type="button" class="btn-icon menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false">
+          <span class="icon-menu"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></span>
+          <span class="icon-close" style="display:none"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+      <a href="/practice">Practice</a>
+      <a href="/research">Research</a>
+      <a href="/chronicle">Chronicle</a>
+      <a href="/publications">Publications</a>
+      <a href="/about">Director</a>
+      <a href="/engagement">Engagement</a>
+      <a href="/careers">Careers (We're Hiring)</a>
+      <a href="https://adamstratmeyer.com" target="_blank" rel="noreferrer">adamstratmeyer.com ↗</a>
+    </nav>
+  </header>
+  <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="search-box" onclick="event.stopPropagation()">
+      <div class="search-inner">
+        <label class="search-label" for="search-input">Search</label>
+        <input class="search-input" id="search-input" type="search" placeholder="Practice, research, director…" autocomplete="off">
+        <ul class="search-results" id="search-results"></ul>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="page-hero">
+      <img src="/images/campus.jpg" alt="Campus exterior" loading="lazy">
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content reveal">
+        <p class="kicker" style="color:var(--paper-3)">Practice Scope</p>
+        <h1>Specialized work for institutions that already know they have a problem.</h1>
+        <p>Stratmeyer Analytica is an independent consulting and auditing practice operated by Director Adam Ian Stratmeyer, J.D. We take defined scopes: AI development &amp; compute, confidential personal consulting, human-subjects IRB compliance, and empirical AI ethics.</p>
+      </div>
+    </div>
+    <div class="container" style="padding-top:4rem;padding-bottom:4rem">
+      <div class="practice-articles">
+
+        <!-- 01: AI Development -->
+        <article class="practice-article reveal">
+          <img class="article-img tilt-card" src="/images/servers.jpg" alt="Server hardware and local compute cluster" loading="lazy">
+          <div>
+            <p class="kicker">Pillar 01</p>
+            <h2>AI Development &amp; Sovereign Compute</h2>
+            <p>Design and deployment of localized autonomous agent workflows, zero-telemetry private inference clusters (vLLM / TensorRT), deterministic evaluation harnesses, and domain LoRA fine-tuning. We replace recurring SaaS vendor costs with permanent, owned infrastructure.</p>
+            <a href="/practice/ai-development" class="btn btn-outline">Read AI Scope →</a>
+          </div>
+        </article>
+
+        <!-- 02: Personal Consulting -->
+        <article class="practice-article reveal stagger-1">
+          <img class="article-img tilt-card" src="/images/desk.jpg" alt="Consulting desk and legal dossiers" loading="lazy">
+          <div>
+            <p class="kicker">Pillar 02</p>
+            <h2>Personal Consulting with Adam Ian Stratmeyer, J.D.</h2>
+            <p>Confidential 1-on-1 strategic advisory and dispute analysis for executive directors, founders, and research principals. Direct counsel on legal-technical intersections, regulatory investigation prep, and organizational crisis navigation.</p>
+            <a href="/practice/personal-consulting" class="btn btn-outline">Read Consulting Scope →</a>
+          </div>
+        </article>
+
+        <!-- 03: IRB Review -->
+        <article class="practice-article reveal stagger-2">
+          <img class="article-img tilt-card" src="/images/corridor.jpg" alt="Institutional corridor and compliance archive" loading="lazy">
+          <div>
+            <p class="kicker">Pillar 03</p>
+            <h2>IRB Review &amp; Human-Subjects Compliance</h2>
+            <p>Over 300 protocol reviews of institutional experience. Specialized auditing of Institutional Review Board protocols, 45 CFR 46 (Common Rule), FDA 21 CFR 50/56, informed consent architecture, and data-sharing agreements.</p>
+            <a href="/practice/irb-review" class="btn btn-outline">Read IRB Scope →</a>
+          </div>
+        </article>
+
+        <!-- 04: AI Ethics -->
+        <article class="practice-article reveal stagger-3">
+          <img class="article-img tilt-card" src="/images/office.jpg" alt="Research office and analytical notes" loading="lazy">
+          <div>
+            <p class="kicker">Pillar 04</p>
+            <h2>AI Ethics &amp; Algorithmic Auditing</h2>
+            <p>Empirical algorithmic auditing without corporate theater or vanity metrics. Testing models against the Observable Function framework, measuring the helpful-harmless paradox, and stress-testing refusal thresholds under stress.</p>
+            <a href="/practice/ai-ethics" class="btn btn-outline">Read AI Ethics Scope →</a>
+          </div>
+        </article>
+
+        <!-- 05: Regulatory Compliance & HIPAA -->
+        <article class="practice-article reveal">
+          <img class="article-img tilt-card" src="/images/window.jpg" alt="Quiet room with sunlit window" loading="lazy">
+          <div>
+            <p class="kicker">Framework 05</p>
+            <h2>Regulatory Auditing (HIPAA, FERPA, PRTF)</h2>
+            <p>HIPAA BAA vendor reviews, minimum necessary standards, and FERPA education record research disclosure protocols. Behavioral strategy consulting for high-acuity residential environments.</p>
+            <a href="/practice/compliance" class="btn btn-outline">Read Compliance Scope →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- HOW ENGAGEMENTS RUN -->
+      <div class="engagement-box reveal" style="margin-top:4rem">
+        <h2>How an engagement runs</h2>
+        <ol class="engagement-steps" style="list-style:none">
+          <li class="engagement-step"><p class="step-num">01</p><h3>Intake</h3><p>Written inquiry, conflict-of-interest screening, and a direct scoping dialogue with Director Adam Stratmeyer.</p></li>
+          <li class="engagement-step"><p class="step-num">02</p><h3>Field &amp; Audit</h3><p>System inspection, code review, protocol reconstruction, and empirical benchmark testing.</p></li>
+          <li class="engagement-step"><p class="step-num">03</p><h3>Close-out</h3><p>Audited deliverables, exposure analysis with named owners, and sovereign handover. No retainer theater.</p></li>
+        </ol>
+        <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
+          <a href="/engagement" class="btn btn-primary">Open an Inquiry</a>
+          <a href="/careers" class="btn btn-outline">Join Our Team (We're Hiring)</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="site-logo"><svg viewBox="0 0 32 32" width="24" height="24" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.25"/><circle cx="16" cy="16" r="5.5" stroke="currentColor" stroke-width="1.25"/><path d="M16 3v6M16 23v6M3 16h6M23 16h6" stroke="currentColor" stroke-width="1.25"/><circle cx="16" cy="16" r="1.4" fill="currentColor"/></svg><span style="font-family:var(--font-display);font-size:1.125rem;color:var(--paper)">Stratmeyer Analytica</span></a>
+        <p>Independent consulting and auditing practice. Rapid City, South Dakota. Observe, log, verify.</p>
+        <p style="margin-top:0.5rem;font-size:0.875rem"><a href="https://adamstratmeyer.com" target="_blank" rel="noreferrer" style="color:var(--paper-2);text-decoration:underline;text-underline-offset:3px">adamstratmeyer.com</a> · <a href="mailto:adamstratmeyer@gmail.com" style="color:var(--paper-2);text-decoration:underline;text-underline-offset:3px">adamstratmeyer@gmail.com</a></p>
+        <a href="/careers" class="footer-hiring-badge">● We're Hiring — View Open Roles</a>
+      </div>
+      <div class="footer-col">
+        <h2>Practice</h2>
+        <ul>
+          <li><a href="/practice/ai-development">AI Development</a></li>
+          <li><a href="/practice/personal-consulting">Personal Consulting</a></li>
+          <li><a href="/practice/irb-review">IRB Protocol Review</a></li>
+          <li><a href="/practice/ai-ethics">AI Ethics &amp; Auditing</a></li>
+          <li><a href="/practice/compliance">Compliance Overview</a></li>
+          <li><a href="/practice/architecture">System Architecture</a></li>
+          <li><a href="/assessment">Readiness Assessment</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Analysis</h2>
+        <ul>
+          <li><a href="/research">Research Archive</a></li>
+          <li><a href="/chronicle">Chronicle</a></li>
+          <li><a href="/publications">Publications</a></li>
+          <li><a href="https://adamstratmeyer.com" target="_blank" rel="noreferrer">Adam Stratmeyer Personal</a></li>
+          <li><a href="https://medium.com/@adamstratmeyer" target="_blank" rel="noreferrer">Medium Essays</a></li>
+          <li><a href="https://observablecompute.org" target="_blank" rel="noreferrer">Observable Compute</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Firm &amp; Legal</h2>
+        <ul>
+          <li><a href="/careers">Careers (We're Hiring)</a></li>
+          <li><a href="/about">Director Dossier</a></li>
+          <li><a href="/engagement">Engagement Inquiry</a></li>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Engagement</a></li>
+          <li><a href="/disclosures">Disclosures &amp; Ethics</a></li>
+          <li><a href="https://orcid.org/0009-0005-8693-4641" target="_blank" rel="noreferrer">ORCID Record</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>&copy; 2026 Stratmeyer Analytica. Independent analysis &amp; systems engineering. Not legal advice.</p>
+        <p>Rapid City, South Dakota · Direct: <a href="mailto:adamstratmeyer@gmail.com" style="text-decoration:underline;text-underline-offset:2px">adamstratmeyer@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="/site.js"></script>
+</body>
+</html>
